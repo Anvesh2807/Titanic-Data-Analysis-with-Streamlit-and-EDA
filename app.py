@@ -58,14 +58,6 @@ sns.countplot(x='Pclass', hue='Survived', data=data, ax=ax)
 ax.set_title('Pclass vs Survived')
 st.pyplot(fig)
 
-'''
-# Correlation Heatmap
-st.subheader('Correlation Heatmap')
-fig, ax = plt.subplots()
-sns.heatmap(data.corr(), annot=True, cmap='coolwarm', ax=ax)
-ax.set_title('Correlation Heatmap')
-st.pyplot(fig)
-'''
 
 # Feature Engineering Section
 st.subheader('Feature Engineering: Family Size')
